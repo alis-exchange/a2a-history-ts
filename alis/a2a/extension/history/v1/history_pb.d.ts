@@ -6,37 +6,36 @@ import * as google_iam_v1_policy_pb from '../../../../../google/iam/v1/policy_pb
 import * as google_iam_v1_iam_policy_pb from '../../../../../google/iam/v1/iam_policy_pb'; // proto import: "google/iam/v1/iam_policy.proto"
 import * as alis_open_iam_v1_iam_pb from '../../../../../alis/open/iam/v1/iam_pb'; // proto import: "alis/open/iam/v1/iam.proto"
 import * as google_protobuf_empty_pb from 'google-protobuf/google/protobuf/empty_pb'; // proto import: "google/protobuf/empty.proto"
-import * as google_protobuf_struct_pb from 'google-protobuf/google/protobuf/struct_pb'; // proto import: "google/protobuf/struct.proto"
 import * as lf_a2a_v1_a2a_pb from '../../../../../lf/a2a/v1/a2a_pb'; // proto import: "lf/a2a/v1/a2a.proto"
 
 
-export class A2AHistory extends jspb.Message {
+export class Thread extends jspb.Message {
   getName(): string;
-  setName(value: string): A2AHistory;
+  setName(value: string): Thread;
 
   getDisplayName(): string;
-  setDisplayName(value: string): A2AHistory;
+  setDisplayName(value: string): Thread;
 
   getAgentId(): string;
-  setAgentId(value: string): A2AHistory;
+  setAgentId(value: string): Thread;
 
   getAgentDisplayName(): string;
-  setAgentDisplayName(value: string): A2AHistory;
+  setAgentDisplayName(value: string): Thread;
 
   getCreateTime(): google_protobuf_timestamp_pb.Timestamp | undefined;
-  setCreateTime(value?: google_protobuf_timestamp_pb.Timestamp): A2AHistory;
+  setCreateTime(value?: google_protobuf_timestamp_pb.Timestamp): Thread;
   hasCreateTime(): boolean;
-  clearCreateTime(): A2AHistory;
+  clearCreateTime(): Thread;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): A2AHistory.AsObject;
-  static toObject(includeInstance: boolean, msg: A2AHistory): A2AHistory.AsObject;
-  static serializeBinaryToWriter(message: A2AHistory, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): A2AHistory;
-  static deserializeBinaryFromReader(message: A2AHistory, reader: jspb.BinaryReader): A2AHistory;
+  toObject(includeInstance?: boolean): Thread.AsObject;
+  static toObject(includeInstance: boolean, msg: Thread): Thread.AsObject;
+  static serializeBinaryToWriter(message: Thread, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Thread;
+  static deserializeBinaryFromReader(message: Thread, reader: jspb.BinaryReader): Thread;
 }
 
-export namespace A2AHistory {
+export namespace Thread {
   export type AsObject = {
     name: string,
     displayName: string,
@@ -46,46 +45,46 @@ export namespace A2AHistory {
   }
 }
 
-export class A2AHistoryEvent extends jspb.Message {
+export class ThreadEvent extends jspb.Message {
   getName(): string;
-  setName(value: string): A2AHistoryEvent;
+  setName(value: string): ThreadEvent;
 
   getTask(): lf_a2a_v1_a2a_pb.Task | undefined;
-  setTask(value?: lf_a2a_v1_a2a_pb.Task): A2AHistoryEvent;
+  setTask(value?: lf_a2a_v1_a2a_pb.Task): ThreadEvent;
   hasTask(): boolean;
-  clearTask(): A2AHistoryEvent;
+  clearTask(): ThreadEvent;
 
   getMessage(): lf_a2a_v1_a2a_pb.Message | undefined;
-  setMessage(value?: lf_a2a_v1_a2a_pb.Message): A2AHistoryEvent;
+  setMessage(value?: lf_a2a_v1_a2a_pb.Message): ThreadEvent;
   hasMessage(): boolean;
-  clearMessage(): A2AHistoryEvent;
+  clearMessage(): ThreadEvent;
 
   getStatusUpdate(): lf_a2a_v1_a2a_pb.TaskStatusUpdateEvent | undefined;
-  setStatusUpdate(value?: lf_a2a_v1_a2a_pb.TaskStatusUpdateEvent): A2AHistoryEvent;
+  setStatusUpdate(value?: lf_a2a_v1_a2a_pb.TaskStatusUpdateEvent): ThreadEvent;
   hasStatusUpdate(): boolean;
-  clearStatusUpdate(): A2AHistoryEvent;
+  clearStatusUpdate(): ThreadEvent;
 
   getArtifactUpdate(): lf_a2a_v1_a2a_pb.TaskArtifactUpdateEvent | undefined;
-  setArtifactUpdate(value?: lf_a2a_v1_a2a_pb.TaskArtifactUpdateEvent): A2AHistoryEvent;
+  setArtifactUpdate(value?: lf_a2a_v1_a2a_pb.TaskArtifactUpdateEvent): ThreadEvent;
   hasArtifactUpdate(): boolean;
-  clearArtifactUpdate(): A2AHistoryEvent;
+  clearArtifactUpdate(): ThreadEvent;
 
   getCreateTime(): google_protobuf_timestamp_pb.Timestamp | undefined;
-  setCreateTime(value?: google_protobuf_timestamp_pb.Timestamp): A2AHistoryEvent;
+  setCreateTime(value?: google_protobuf_timestamp_pb.Timestamp): ThreadEvent;
   hasCreateTime(): boolean;
-  clearCreateTime(): A2AHistoryEvent;
+  clearCreateTime(): ThreadEvent;
 
-  getPayloadCase(): A2AHistoryEvent.PayloadCase;
+  getPayloadCase(): ThreadEvent.PayloadCase;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): A2AHistoryEvent.AsObject;
-  static toObject(includeInstance: boolean, msg: A2AHistoryEvent): A2AHistoryEvent.AsObject;
-  static serializeBinaryToWriter(message: A2AHistoryEvent, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): A2AHistoryEvent;
-  static deserializeBinaryFromReader(message: A2AHistoryEvent, reader: jspb.BinaryReader): A2AHistoryEvent;
+  toObject(includeInstance?: boolean): ThreadEvent.AsObject;
+  static toObject(includeInstance: boolean, msg: ThreadEvent): ThreadEvent.AsObject;
+  static serializeBinaryToWriter(message: ThreadEvent, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ThreadEvent;
+  static deserializeBinaryFromReader(message: ThreadEvent, reader: jspb.BinaryReader): ThreadEvent;
 }
 
-export namespace A2AHistoryEvent {
+export namespace ThreadEvent {
   export type AsObject = {
     name: string,
     task?: lf_a2a_v1_a2a_pb.Task.AsObject,
@@ -104,72 +103,72 @@ export namespace A2AHistoryEvent {
   }
 }
 
-export class GetA2AHistoryRequest extends jspb.Message {
+export class GetThreadRequest extends jspb.Message {
   getName(): string;
-  setName(value: string): GetA2AHistoryRequest;
+  setName(value: string): GetThreadRequest;
 
   getReadMask(): google_protobuf_field_mask_pb.FieldMask | undefined;
-  setReadMask(value?: google_protobuf_field_mask_pb.FieldMask): GetA2AHistoryRequest;
+  setReadMask(value?: google_protobuf_field_mask_pb.FieldMask): GetThreadRequest;
   hasReadMask(): boolean;
-  clearReadMask(): GetA2AHistoryRequest;
+  clearReadMask(): GetThreadRequest;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): GetA2AHistoryRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: GetA2AHistoryRequest): GetA2AHistoryRequest.AsObject;
-  static serializeBinaryToWriter(message: GetA2AHistoryRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): GetA2AHistoryRequest;
-  static deserializeBinaryFromReader(message: GetA2AHistoryRequest, reader: jspb.BinaryReader): GetA2AHistoryRequest;
+  toObject(includeInstance?: boolean): GetThreadRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: GetThreadRequest): GetThreadRequest.AsObject;
+  static serializeBinaryToWriter(message: GetThreadRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GetThreadRequest;
+  static deserializeBinaryFromReader(message: GetThreadRequest, reader: jspb.BinaryReader): GetThreadRequest;
 }
 
-export namespace GetA2AHistoryRequest {
+export namespace GetThreadRequest {
   export type AsObject = {
     name: string,
     readMask?: google_protobuf_field_mask_pb.FieldMask.AsObject,
   }
 }
 
-export class DeleteA2AHistoryRequest extends jspb.Message {
+export class DeleteThreadRequest extends jspb.Message {
   getName(): string;
-  setName(value: string): DeleteA2AHistoryRequest;
+  setName(value: string): DeleteThreadRequest;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): DeleteA2AHistoryRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: DeleteA2AHistoryRequest): DeleteA2AHistoryRequest.AsObject;
-  static serializeBinaryToWriter(message: DeleteA2AHistoryRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): DeleteA2AHistoryRequest;
-  static deserializeBinaryFromReader(message: DeleteA2AHistoryRequest, reader: jspb.BinaryReader): DeleteA2AHistoryRequest;
+  toObject(includeInstance?: boolean): DeleteThreadRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: DeleteThreadRequest): DeleteThreadRequest.AsObject;
+  static serializeBinaryToWriter(message: DeleteThreadRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): DeleteThreadRequest;
+  static deserializeBinaryFromReader(message: DeleteThreadRequest, reader: jspb.BinaryReader): DeleteThreadRequest;
 }
 
-export namespace DeleteA2AHistoryRequest {
+export namespace DeleteThreadRequest {
   export type AsObject = {
     name: string,
   }
 }
 
-export class ListA2AHistoriesRequest extends jspb.Message {
+export class ListThreadsRequest extends jspb.Message {
   getPageSize(): number;
-  setPageSize(value: number): ListA2AHistoriesRequest;
+  setPageSize(value: number): ListThreadsRequest;
 
   getPageToken(): string;
-  setPageToken(value: string): ListA2AHistoriesRequest;
+  setPageToken(value: string): ListThreadsRequest;
 
   getAgentId(): string;
-  setAgentId(value: string): ListA2AHistoriesRequest;
+  setAgentId(value: string): ListThreadsRequest;
 
   getReadMask(): google_protobuf_field_mask_pb.FieldMask | undefined;
-  setReadMask(value?: google_protobuf_field_mask_pb.FieldMask): ListA2AHistoriesRequest;
+  setReadMask(value?: google_protobuf_field_mask_pb.FieldMask): ListThreadsRequest;
   hasReadMask(): boolean;
-  clearReadMask(): ListA2AHistoriesRequest;
+  clearReadMask(): ListThreadsRequest;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ListA2AHistoriesRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: ListA2AHistoriesRequest): ListA2AHistoriesRequest.AsObject;
-  static serializeBinaryToWriter(message: ListA2AHistoriesRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ListA2AHistoriesRequest;
-  static deserializeBinaryFromReader(message: ListA2AHistoriesRequest, reader: jspb.BinaryReader): ListA2AHistoriesRequest;
+  toObject(includeInstance?: boolean): ListThreadsRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: ListThreadsRequest): ListThreadsRequest.AsObject;
+  static serializeBinaryToWriter(message: ListThreadsRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ListThreadsRequest;
+  static deserializeBinaryFromReader(message: ListThreadsRequest, reader: jspb.BinaryReader): ListThreadsRequest;
 }
 
-export namespace ListA2AHistoriesRequest {
+export namespace ListThreadsRequest {
   export type AsObject = {
     pageSize: number,
     pageToken: string,
@@ -178,78 +177,78 @@ export namespace ListA2AHistoriesRequest {
   }
 }
 
-export class ListA2AHistoriesResponse extends jspb.Message {
-  getHistoriesList(): Array<A2AHistory>;
-  setHistoriesList(value: Array<A2AHistory>): ListA2AHistoriesResponse;
-  clearHistoriesList(): ListA2AHistoriesResponse;
-  addHistories(value?: A2AHistory, index?: number): A2AHistory;
+export class ListThreadsResponse extends jspb.Message {
+  getThreadsList(): Array<Thread>;
+  setThreadsList(value: Array<Thread>): ListThreadsResponse;
+  clearThreadsList(): ListThreadsResponse;
+  addThreads(value?: Thread, index?: number): Thread;
 
   getNextPageToken(): string;
-  setNextPageToken(value: string): ListA2AHistoriesResponse;
+  setNextPageToken(value: string): ListThreadsResponse;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ListA2AHistoriesResponse.AsObject;
-  static toObject(includeInstance: boolean, msg: ListA2AHistoriesResponse): ListA2AHistoriesResponse.AsObject;
-  static serializeBinaryToWriter(message: ListA2AHistoriesResponse, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ListA2AHistoriesResponse;
-  static deserializeBinaryFromReader(message: ListA2AHistoriesResponse, reader: jspb.BinaryReader): ListA2AHistoriesResponse;
+  toObject(includeInstance?: boolean): ListThreadsResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: ListThreadsResponse): ListThreadsResponse.AsObject;
+  static serializeBinaryToWriter(message: ListThreadsResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ListThreadsResponse;
+  static deserializeBinaryFromReader(message: ListThreadsResponse, reader: jspb.BinaryReader): ListThreadsResponse;
 }
 
-export namespace ListA2AHistoriesResponse {
+export namespace ListThreadsResponse {
   export type AsObject = {
-    historiesList: Array<A2AHistory.AsObject>,
+    threadsList: Array<Thread.AsObject>,
     nextPageToken: string,
   }
 }
 
-export class GetA2AHistoryEventRequest extends jspb.Message {
+export class GetThreadEventRequest extends jspb.Message {
   getName(): string;
-  setName(value: string): GetA2AHistoryEventRequest;
+  setName(value: string): GetThreadEventRequest;
 
   getReadMask(): google_protobuf_field_mask_pb.FieldMask | undefined;
-  setReadMask(value?: google_protobuf_field_mask_pb.FieldMask): GetA2AHistoryEventRequest;
+  setReadMask(value?: google_protobuf_field_mask_pb.FieldMask): GetThreadEventRequest;
   hasReadMask(): boolean;
-  clearReadMask(): GetA2AHistoryEventRequest;
+  clearReadMask(): GetThreadEventRequest;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): GetA2AHistoryEventRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: GetA2AHistoryEventRequest): GetA2AHistoryEventRequest.AsObject;
-  static serializeBinaryToWriter(message: GetA2AHistoryEventRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): GetA2AHistoryEventRequest;
-  static deserializeBinaryFromReader(message: GetA2AHistoryEventRequest, reader: jspb.BinaryReader): GetA2AHistoryEventRequest;
+  toObject(includeInstance?: boolean): GetThreadEventRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: GetThreadEventRequest): GetThreadEventRequest.AsObject;
+  static serializeBinaryToWriter(message: GetThreadEventRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GetThreadEventRequest;
+  static deserializeBinaryFromReader(message: GetThreadEventRequest, reader: jspb.BinaryReader): GetThreadEventRequest;
 }
 
-export namespace GetA2AHistoryEventRequest {
+export namespace GetThreadEventRequest {
   export type AsObject = {
     name: string,
     readMask?: google_protobuf_field_mask_pb.FieldMask.AsObject,
   }
 }
 
-export class ListEventsRequest extends jspb.Message {
+export class ListThreadEventsRequest extends jspb.Message {
   getParent(): string;
-  setParent(value: string): ListEventsRequest;
+  setParent(value: string): ListThreadEventsRequest;
 
   getPageSize(): number;
-  setPageSize(value: number): ListEventsRequest;
+  setPageSize(value: number): ListThreadEventsRequest;
 
   getPageToken(): string;
-  setPageToken(value: string): ListEventsRequest;
+  setPageToken(value: string): ListThreadEventsRequest;
 
   getReadMask(): google_protobuf_field_mask_pb.FieldMask | undefined;
-  setReadMask(value?: google_protobuf_field_mask_pb.FieldMask): ListEventsRequest;
+  setReadMask(value?: google_protobuf_field_mask_pb.FieldMask): ListThreadEventsRequest;
   hasReadMask(): boolean;
-  clearReadMask(): ListEventsRequest;
+  clearReadMask(): ListThreadEventsRequest;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ListEventsRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: ListEventsRequest): ListEventsRequest.AsObject;
-  static serializeBinaryToWriter(message: ListEventsRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ListEventsRequest;
-  static deserializeBinaryFromReader(message: ListEventsRequest, reader: jspb.BinaryReader): ListEventsRequest;
+  toObject(includeInstance?: boolean): ListThreadEventsRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: ListThreadEventsRequest): ListThreadEventsRequest.AsObject;
+  static serializeBinaryToWriter(message: ListThreadEventsRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ListThreadEventsRequest;
+  static deserializeBinaryFromReader(message: ListThreadEventsRequest, reader: jspb.BinaryReader): ListThreadEventsRequest;
 }
 
-export namespace ListEventsRequest {
+export namespace ListThreadEventsRequest {
   export type AsObject = {
     parent: string,
     pageSize: number,
@@ -258,88 +257,88 @@ export namespace ListEventsRequest {
   }
 }
 
-export class ListEventsResponse extends jspb.Message {
-  getEventsList(): Array<A2AHistoryEvent>;
-  setEventsList(value: Array<A2AHistoryEvent>): ListEventsResponse;
-  clearEventsList(): ListEventsResponse;
-  addEvents(value?: A2AHistoryEvent, index?: number): A2AHistoryEvent;
+export class ListThreadEventsResponse extends jspb.Message {
+  getEventsList(): Array<ThreadEvent>;
+  setEventsList(value: Array<ThreadEvent>): ListThreadEventsResponse;
+  clearEventsList(): ListThreadEventsResponse;
+  addEvents(value?: ThreadEvent, index?: number): ThreadEvent;
 
   getNextPageToken(): string;
-  setNextPageToken(value: string): ListEventsResponse;
+  setNextPageToken(value: string): ListThreadEventsResponse;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ListEventsResponse.AsObject;
-  static toObject(includeInstance: boolean, msg: ListEventsResponse): ListEventsResponse.AsObject;
-  static serializeBinaryToWriter(message: ListEventsResponse, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ListEventsResponse;
-  static deserializeBinaryFromReader(message: ListEventsResponse, reader: jspb.BinaryReader): ListEventsResponse;
+  toObject(includeInstance?: boolean): ListThreadEventsResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: ListThreadEventsResponse): ListThreadEventsResponse.AsObject;
+  static serializeBinaryToWriter(message: ListThreadEventsResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ListThreadEventsResponse;
+  static deserializeBinaryFromReader(message: ListThreadEventsResponse, reader: jspb.BinaryReader): ListThreadEventsResponse;
 }
 
-export namespace ListEventsResponse {
+export namespace ListThreadEventsResponse {
   export type AsObject = {
-    eventsList: Array<A2AHistoryEvent.AsObject>,
+    eventsList: Array<ThreadEvent.AsObject>,
     nextPageToken: string,
   }
 }
 
-export class StreamEventsRequest extends jspb.Message {
+export class StreamThreadEventsRequest extends jspb.Message {
   getParent(): string;
-  setParent(value: string): StreamEventsRequest;
+  setParent(value: string): StreamThreadEventsRequest;
 
   getReadMask(): google_protobuf_field_mask_pb.FieldMask | undefined;
-  setReadMask(value?: google_protobuf_field_mask_pb.FieldMask): StreamEventsRequest;
+  setReadMask(value?: google_protobuf_field_mask_pb.FieldMask): StreamThreadEventsRequest;
   hasReadMask(): boolean;
-  clearReadMask(): StreamEventsRequest;
+  clearReadMask(): StreamThreadEventsRequest;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): StreamEventsRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: StreamEventsRequest): StreamEventsRequest.AsObject;
-  static serializeBinaryToWriter(message: StreamEventsRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): StreamEventsRequest;
-  static deserializeBinaryFromReader(message: StreamEventsRequest, reader: jspb.BinaryReader): StreamEventsRequest;
+  toObject(includeInstance?: boolean): StreamThreadEventsRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: StreamThreadEventsRequest): StreamThreadEventsRequest.AsObject;
+  static serializeBinaryToWriter(message: StreamThreadEventsRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): StreamThreadEventsRequest;
+  static deserializeBinaryFromReader(message: StreamThreadEventsRequest, reader: jspb.BinaryReader): StreamThreadEventsRequest;
 }
 
-export namespace StreamEventsRequest {
+export namespace StreamThreadEventsRequest {
   export type AsObject = {
     parent: string,
     readMask?: google_protobuf_field_mask_pb.FieldMask.AsObject,
   }
 }
 
-export class AppendEventRequest extends jspb.Message {
-  getEvent(): A2AHistoryEvent | undefined;
-  setEvent(value?: A2AHistoryEvent): AppendEventRequest;
+export class AppendThreadEventRequest extends jspb.Message {
+  getEvent(): ThreadEvent | undefined;
+  setEvent(value?: ThreadEvent): AppendThreadEventRequest;
   hasEvent(): boolean;
-  clearEvent(): AppendEventRequest;
+  clearEvent(): AppendThreadEventRequest;
 
   getAgentId(): string;
-  setAgentId(value: string): AppendEventRequest;
+  setAgentId(value: string): AppendThreadEventRequest;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): AppendEventRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: AppendEventRequest): AppendEventRequest.AsObject;
-  static serializeBinaryToWriter(message: AppendEventRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): AppendEventRequest;
-  static deserializeBinaryFromReader(message: AppendEventRequest, reader: jspb.BinaryReader): AppendEventRequest;
+  toObject(includeInstance?: boolean): AppendThreadEventRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: AppendThreadEventRequest): AppendThreadEventRequest.AsObject;
+  static serializeBinaryToWriter(message: AppendThreadEventRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): AppendThreadEventRequest;
+  static deserializeBinaryFromReader(message: AppendThreadEventRequest, reader: jspb.BinaryReader): AppendThreadEventRequest;
 }
 
-export namespace AppendEventRequest {
+export namespace AppendThreadEventRequest {
   export type AsObject = {
-    event?: A2AHistoryEvent.AsObject,
+    event?: ThreadEvent.AsObject,
     agentId: string,
   }
 }
 
-export class AppendEventResponse extends jspb.Message {
+export class AppendThreadEventResponse extends jspb.Message {
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): AppendEventResponse.AsObject;
-  static toObject(includeInstance: boolean, msg: AppendEventResponse): AppendEventResponse.AsObject;
-  static serializeBinaryToWriter(message: AppendEventResponse, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): AppendEventResponse;
-  static deserializeBinaryFromReader(message: AppendEventResponse, reader: jspb.BinaryReader): AppendEventResponse;
+  toObject(includeInstance?: boolean): AppendThreadEventResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: AppendThreadEventResponse): AppendThreadEventResponse.AsObject;
+  static serializeBinaryToWriter(message: AppendThreadEventResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): AppendThreadEventResponse;
+  static deserializeBinaryFromReader(message: AppendThreadEventResponse, reader: jspb.BinaryReader): AppendThreadEventResponse;
 }
 
-export namespace AppendEventResponse {
+export namespace AppendThreadEventResponse {
   export type AsObject = {
   }
 }

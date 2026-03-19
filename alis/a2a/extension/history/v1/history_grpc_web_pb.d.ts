@@ -4,9 +4,10 @@ import * as alis_a2a_extension_history_v1_history_pb from '../../../../../alis/a
 import * as alis_open_iam_v1_iam_pb from '../../../../../alis/open/iam/v1/iam_pb'; // proto import: "alis/open/iam/v1/iam.proto"
 import * as google_iam_v1_iam_policy_pb from '../../../../../google/iam/v1/iam_policy_pb'; // proto import: "google/iam/v1/iam_policy.proto"
 import * as google_iam_v1_policy_pb from '../../../../../google/iam/v1/policy_pb'; // proto import: "google/iam/v1/policy.proto"
+import * as google_protobuf_empty_pb from 'google-protobuf/google/protobuf/empty_pb'; // proto import: "google/protobuf/empty.proto"
 
 
-export class A2AHistoryServiceClient {
+export class ThreadServiceClient {
   constructor (hostname: string,
                credentials?: null | { [index: string]: string; },
                options?: null | { [index: string]: any; });
@@ -53,49 +54,49 @@ export class A2AHistoryServiceClient {
                response: google_iam_v1_policy_pb.Policy) => void
   ): grpcWeb.ClientReadableStream<google_iam_v1_policy_pb.Policy>;
 
-  listA2AHistories(
-    request: alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesRequest,
+  listThreads(
+    request: alis_a2a_extension_history_v1_history_pb.ListThreadsRequest,
     metadata: grpcWeb.Metadata | undefined,
     callback: (err: grpcWeb.RpcError,
-               response: alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesResponse) => void
-  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesResponse>;
+               response: alis_a2a_extension_history_v1_history_pb.ListThreadsResponse) => void
+  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.ListThreadsResponse>;
 
-  getA2AHistory(
-    request: alis_a2a_extension_history_v1_history_pb.GetA2AHistoryRequest,
+  getThread(
+    request: alis_a2a_extension_history_v1_history_pb.GetThreadRequest,
     metadata: grpcWeb.Metadata | undefined,
     callback: (err: grpcWeb.RpcError,
-               response: alis_a2a_extension_history_v1_history_pb.A2AHistory) => void
-  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.A2AHistory>;
+               response: alis_a2a_extension_history_v1_history_pb.Thread) => void
+  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.Thread>;
 
-  deleteA2AHistory(
-    request: alis_a2a_extension_history_v1_history_pb.DeleteA2AHistoryRequest,
+  deleteThread(
+    request: alis_a2a_extension_history_v1_history_pb.DeleteThreadRequest,
     metadata: grpcWeb.Metadata | undefined,
     callback: (err: grpcWeb.RpcError,
-               response: alis_a2a_extension_history_v1_history_pb.A2AHistory) => void
-  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.A2AHistory>;
+               response: google_protobuf_empty_pb.Empty) => void
+  ): grpcWeb.ClientReadableStream<google_protobuf_empty_pb.Empty>;
 
-  appendEvent(
-    request: alis_a2a_extension_history_v1_history_pb.AppendEventRequest,
+  appendThreadEvent(
+    request: alis_a2a_extension_history_v1_history_pb.AppendThreadEventRequest,
     metadata: grpcWeb.Metadata | undefined,
     callback: (err: grpcWeb.RpcError,
-               response: alis_a2a_extension_history_v1_history_pb.AppendEventResponse) => void
-  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.AppendEventResponse>;
+               response: alis_a2a_extension_history_v1_history_pb.AppendThreadEventResponse) => void
+  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.AppendThreadEventResponse>;
 
-  listEvents(
-    request: alis_a2a_extension_history_v1_history_pb.ListEventsRequest,
+  listThreadEvents(
+    request: alis_a2a_extension_history_v1_history_pb.ListThreadEventsRequest,
     metadata: grpcWeb.Metadata | undefined,
     callback: (err: grpcWeb.RpcError,
-               response: alis_a2a_extension_history_v1_history_pb.ListEventsResponse) => void
-  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.ListEventsResponse>;
+               response: alis_a2a_extension_history_v1_history_pb.ListThreadEventsResponse) => void
+  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.ListThreadEventsResponse>;
 
-  streamEvents(
-    request: alis_a2a_extension_history_v1_history_pb.StreamEventsRequest,
+  streamThreadEvents(
+    request: alis_a2a_extension_history_v1_history_pb.StreamThreadEventsRequest,
     metadata?: grpcWeb.Metadata
-  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.A2AHistoryEvent>;
+  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.ThreadEvent>;
 
 }
 
-export class A2AHistoryServicePromiseClient {
+export class ThreadServicePromiseClient {
   constructor (hostname: string,
                credentials?: null | { [index: string]: string; },
                options?: null | { [index: string]: any; });
@@ -130,35 +131,35 @@ export class A2AHistoryServicePromiseClient {
     metadata?: grpcWeb.Metadata
   ): Promise<google_iam_v1_policy_pb.Policy>;
 
-  listA2AHistories(
-    request: alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesRequest,
+  listThreads(
+    request: alis_a2a_extension_history_v1_history_pb.ListThreadsRequest,
     metadata?: grpcWeb.Metadata
-  ): Promise<alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesResponse>;
+  ): Promise<alis_a2a_extension_history_v1_history_pb.ListThreadsResponse>;
 
-  getA2AHistory(
-    request: alis_a2a_extension_history_v1_history_pb.GetA2AHistoryRequest,
+  getThread(
+    request: alis_a2a_extension_history_v1_history_pb.GetThreadRequest,
     metadata?: grpcWeb.Metadata
-  ): Promise<alis_a2a_extension_history_v1_history_pb.A2AHistory>;
+  ): Promise<alis_a2a_extension_history_v1_history_pb.Thread>;
 
-  deleteA2AHistory(
-    request: alis_a2a_extension_history_v1_history_pb.DeleteA2AHistoryRequest,
+  deleteThread(
+    request: alis_a2a_extension_history_v1_history_pb.DeleteThreadRequest,
     metadata?: grpcWeb.Metadata
-  ): Promise<alis_a2a_extension_history_v1_history_pb.A2AHistory>;
+  ): Promise<google_protobuf_empty_pb.Empty>;
 
-  appendEvent(
-    request: alis_a2a_extension_history_v1_history_pb.AppendEventRequest,
+  appendThreadEvent(
+    request: alis_a2a_extension_history_v1_history_pb.AppendThreadEventRequest,
     metadata?: grpcWeb.Metadata
-  ): Promise<alis_a2a_extension_history_v1_history_pb.AppendEventResponse>;
+  ): Promise<alis_a2a_extension_history_v1_history_pb.AppendThreadEventResponse>;
 
-  listEvents(
-    request: alis_a2a_extension_history_v1_history_pb.ListEventsRequest,
+  listThreadEvents(
+    request: alis_a2a_extension_history_v1_history_pb.ListThreadEventsRequest,
     metadata?: grpcWeb.Metadata
-  ): Promise<alis_a2a_extension_history_v1_history_pb.ListEventsResponse>;
+  ): Promise<alis_a2a_extension_history_v1_history_pb.ListThreadEventsResponse>;
 
-  streamEvents(
-    request: alis_a2a_extension_history_v1_history_pb.StreamEventsRequest,
+  streamThreadEvents(
+    request: alis_a2a_extension_history_v1_history_pb.StreamThreadEventsRequest,
     metadata?: grpcWeb.Metadata
-  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.A2AHistoryEvent>;
+  ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.ThreadEvent>;
 
 }
 

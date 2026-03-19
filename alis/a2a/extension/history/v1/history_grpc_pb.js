@@ -9,128 +9,127 @@ var google_iam_v1_policy_pb = require('../../../../../google/iam/v1/policy_pb.js
 var google_iam_v1_iam_policy_pb = require('../../../../../google/iam/v1/iam_policy_pb.js');
 var alis_open_iam_v1_iam_pb = require('../../../../../alis/open/iam/v1/iam_pb.js');
 var google_protobuf_empty_pb = require('google-protobuf/google/protobuf/empty_pb.js');
-var google_protobuf_struct_pb = require('google-protobuf/google/protobuf/struct_pb.js');
 var lf_a2a_v1_a2a_pb = require('../../../../../lf/a2a/v1/a2a_pb.js');
 
-function serialize_alis_a2a_extension_history_v1_A2AHistory(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.A2AHistory)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.A2AHistory');
+function serialize_alis_a2a_extension_history_v1_AppendThreadEventRequest(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.AppendThreadEventRequest)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.AppendThreadEventRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_A2AHistory(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.A2AHistory.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_AppendThreadEventRequest(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.AppendThreadEventRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_alis_a2a_extension_history_v1_A2AHistoryEvent(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.A2AHistoryEvent)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.A2AHistoryEvent');
+function serialize_alis_a2a_extension_history_v1_AppendThreadEventResponse(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.AppendThreadEventResponse)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.AppendThreadEventResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_A2AHistoryEvent(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.A2AHistoryEvent.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_AppendThreadEventResponse(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.AppendThreadEventResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_alis_a2a_extension_history_v1_AppendEventRequest(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.AppendEventRequest)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.AppendEventRequest');
+function serialize_alis_a2a_extension_history_v1_DeleteThreadRequest(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.DeleteThreadRequest)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.DeleteThreadRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_AppendEventRequest(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.AppendEventRequest.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_DeleteThreadRequest(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.DeleteThreadRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_alis_a2a_extension_history_v1_AppendEventResponse(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.AppendEventResponse)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.AppendEventResponse');
+function serialize_alis_a2a_extension_history_v1_GetThreadRequest(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.GetThreadRequest)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.GetThreadRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_AppendEventResponse(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.AppendEventResponse.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_GetThreadRequest(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.GetThreadRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_alis_a2a_extension_history_v1_DeleteA2AHistoryRequest(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.DeleteA2AHistoryRequest)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.DeleteA2AHistoryRequest');
+function serialize_alis_a2a_extension_history_v1_ListThreadEventsRequest(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.ListThreadEventsRequest)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.ListThreadEventsRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_DeleteA2AHistoryRequest(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.DeleteA2AHistoryRequest.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_ListThreadEventsRequest(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.ListThreadEventsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_alis_a2a_extension_history_v1_GetA2AHistoryRequest(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.GetA2AHistoryRequest)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.GetA2AHistoryRequest');
+function serialize_alis_a2a_extension_history_v1_ListThreadEventsResponse(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.ListThreadEventsResponse)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.ListThreadEventsResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_GetA2AHistoryRequest(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.GetA2AHistoryRequest.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_ListThreadEventsResponse(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.ListThreadEventsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_alis_a2a_extension_history_v1_ListA2AHistoriesRequest(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesRequest)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.ListA2AHistoriesRequest');
+function serialize_alis_a2a_extension_history_v1_ListThreadsRequest(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.ListThreadsRequest)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.ListThreadsRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_ListA2AHistoriesRequest(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesRequest.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_ListThreadsRequest(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.ListThreadsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_alis_a2a_extension_history_v1_ListA2AHistoriesResponse(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesResponse)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.ListA2AHistoriesResponse');
+function serialize_alis_a2a_extension_history_v1_ListThreadsResponse(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.ListThreadsResponse)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.ListThreadsResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_ListA2AHistoriesResponse(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesResponse.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_ListThreadsResponse(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.ListThreadsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_alis_a2a_extension_history_v1_ListEventsRequest(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.ListEventsRequest)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.ListEventsRequest');
+function serialize_alis_a2a_extension_history_v1_StreamThreadEventsRequest(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.StreamThreadEventsRequest)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.StreamThreadEventsRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_ListEventsRequest(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.ListEventsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_StreamThreadEventsRequest(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.StreamThreadEventsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_alis_a2a_extension_history_v1_ListEventsResponse(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.ListEventsResponse)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.ListEventsResponse');
+function serialize_alis_a2a_extension_history_v1_Thread(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.Thread)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.Thread');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_ListEventsResponse(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.ListEventsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_Thread(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.Thread.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_alis_a2a_extension_history_v1_StreamEventsRequest(arg) {
-  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.StreamEventsRequest)) {
-    throw new Error('Expected argument of type alis.a2a.extension.history.v1.StreamEventsRequest');
+function serialize_alis_a2a_extension_history_v1_ThreadEvent(arg) {
+  if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.ThreadEvent)) {
+    throw new Error('Expected argument of type alis.a2a.extension.history.v1.ThreadEvent');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_alis_a2a_extension_history_v1_StreamEventsRequest(buffer_arg) {
-  return alis_a2a_extension_history_v1_history_pb.StreamEventsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_alis_a2a_extension_history_v1_ThreadEvent(buffer_arg) {
+  return alis_a2a_extension_history_v1_history_pb.ThreadEvent.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_alis_open_iam_v1_AddIamBindingsRequest(arg) {
@@ -232,12 +231,24 @@ function deserialize_google_iam_v1_TestIamPermissionsResponse(buffer_arg) {
   return google_iam_v1_iam_policy_pb.TestIamPermissionsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_google_protobuf_Empty(arg) {
+  if (!(arg instanceof google_protobuf_empty_pb.Empty)) {
+    throw new Error('Expected argument of type google.protobuf.Empty');
+  }
+  return Buffer.from(arg.serializeBinary());
+}
 
-// A2AHistoryService
-var A2AHistoryServiceService = exports.A2AHistoryServiceService = {
+function deserialize_google_protobuf_Empty(buffer_arg) {
+  return google_protobuf_empty_pb.Empty.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+
+// Manages persisted A2A conversation threads and their events, including
+// thread listing, event appends, event streaming, and IAM policy access.
+var ThreadServiceService = exports.ThreadServiceService = {
   // Gets the IAM policy for a resource implemented in this service.
 getIamPolicy: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/GetIamPolicy',
+    path: '/alis.a2a.extension.history.v1.ThreadService/GetIamPolicy',
     requestStream: false,
     responseStream: false,
     requestType: google_iam_v1_iam_policy_pb.GetIamPolicyRequest,
@@ -249,7 +260,7 @@ getIamPolicy: {
   },
   // Sets the IAM policy for a resource implemented in this service.
 setIamPolicy: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/SetIamPolicy',
+    path: '/alis.a2a.extension.history.v1.ThreadService/SetIamPolicy',
     requestStream: false,
     responseStream: false,
     requestType: google_iam_v1_iam_policy_pb.SetIamPolicyRequest,
@@ -261,7 +272,7 @@ setIamPolicy: {
   },
   // Returns permissions that a caller has on the specified resource.
 testIamPermissions: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/TestIamPermissions',
+    path: '/alis.a2a.extension.history.v1.ThreadService/TestIamPermissions',
     requestStream: false,
     responseStream: false,
     requestType: google_iam_v1_iam_policy_pb.TestIamPermissionsRequest,
@@ -273,7 +284,7 @@ testIamPermissions: {
   },
   // Returns permissions that a caller has on the specified resources.
 batchTestIamPermissions: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/BatchTestIamPermissions',
+    path: '/alis.a2a.extension.history.v1.ThreadService/BatchTestIamPermissions',
     requestStream: false,
     responseStream: false,
     requestType: alis_open_iam_v1_iam_pb.BatchTestIamPermissionsRequest,
@@ -285,7 +296,7 @@ batchTestIamPermissions: {
   },
   // Adds principals or updates the roles existing principals have on an IAM Policy protected resource.
 addIamBindings: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/AddIamBindings',
+    path: '/alis.a2a.extension.history.v1.ThreadService/AddIamBindings',
     requestStream: false,
     responseStream: false,
     requestType: alis_open_iam_v1_iam_pb.AddIamBindingsRequest,
@@ -297,7 +308,7 @@ addIamBindings: {
   },
   // Removes principals or some of the roles they have on an IAM Policy protected resource.
 removeIamBindings: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/RemoveIamBindings',
+    path: '/alis.a2a.extension.history.v1.ThreadService/RemoveIamBindings',
     requestStream: false,
     responseStream: false,
     requestType: alis_open_iam_v1_iam_pb.RemoveIamBindingsRequest,
@@ -307,78 +318,78 @@ removeIamBindings: {
     responseSerialize: serialize_google_iam_v1_Policy,
     responseDeserialize: deserialize_google_iam_v1_Policy,
   },
-  // Lists all histories.
-listA2AHistories: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/ListA2AHistories',
+  // Lists all Threads.
+listThreads: {
+    path: '/alis.a2a.extension.history.v1.ThreadService/ListThreads',
     requestStream: false,
     responseStream: false,
-    requestType: alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesRequest,
-    responseType: alis_a2a_extension_history_v1_history_pb.ListA2AHistoriesResponse,
-    requestSerialize: serialize_alis_a2a_extension_history_v1_ListA2AHistoriesRequest,
-    requestDeserialize: deserialize_alis_a2a_extension_history_v1_ListA2AHistoriesRequest,
-    responseSerialize: serialize_alis_a2a_extension_history_v1_ListA2AHistoriesResponse,
-    responseDeserialize: deserialize_alis_a2a_extension_history_v1_ListA2AHistoriesResponse,
+    requestType: alis_a2a_extension_history_v1_history_pb.ListThreadsRequest,
+    responseType: alis_a2a_extension_history_v1_history_pb.ListThreadsResponse,
+    requestSerialize: serialize_alis_a2a_extension_history_v1_ListThreadsRequest,
+    requestDeserialize: deserialize_alis_a2a_extension_history_v1_ListThreadsRequest,
+    responseSerialize: serialize_alis_a2a_extension_history_v1_ListThreadsResponse,
+    responseDeserialize: deserialize_alis_a2a_extension_history_v1_ListThreadsResponse,
   },
-  // Gets an A2AHistory by its resource name.
-getA2AHistory: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/GetA2AHistory',
+  // Gets an Thread by its resource name.
+getThread: {
+    path: '/alis.a2a.extension.history.v1.ThreadService/GetThread',
     requestStream: false,
     responseStream: false,
-    requestType: alis_a2a_extension_history_v1_history_pb.GetA2AHistoryRequest,
-    responseType: alis_a2a_extension_history_v1_history_pb.A2AHistory,
-    requestSerialize: serialize_alis_a2a_extension_history_v1_GetA2AHistoryRequest,
-    requestDeserialize: deserialize_alis_a2a_extension_history_v1_GetA2AHistoryRequest,
-    responseSerialize: serialize_alis_a2a_extension_history_v1_A2AHistory,
-    responseDeserialize: deserialize_alis_a2a_extension_history_v1_A2AHistory,
+    requestType: alis_a2a_extension_history_v1_history_pb.GetThreadRequest,
+    responseType: alis_a2a_extension_history_v1_history_pb.Thread,
+    requestSerialize: serialize_alis_a2a_extension_history_v1_GetThreadRequest,
+    requestDeserialize: deserialize_alis_a2a_extension_history_v1_GetThreadRequest,
+    responseSerialize: serialize_alis_a2a_extension_history_v1_Thread,
+    responseDeserialize: deserialize_alis_a2a_extension_history_v1_Thread,
   },
-  // Deletes an A2AHistory.
-deleteA2AHistory: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/DeleteA2AHistory',
+  // Deletes an Thread.
+deleteThread: {
+    path: '/alis.a2a.extension.history.v1.ThreadService/DeleteThread',
     requestStream: false,
     responseStream: false,
-    requestType: alis_a2a_extension_history_v1_history_pb.DeleteA2AHistoryRequest,
-    responseType: alis_a2a_extension_history_v1_history_pb.A2AHistory,
-    requestSerialize: serialize_alis_a2a_extension_history_v1_DeleteA2AHistoryRequest,
-    requestDeserialize: deserialize_alis_a2a_extension_history_v1_DeleteA2AHistoryRequest,
-    responseSerialize: serialize_alis_a2a_extension_history_v1_A2AHistory,
-    responseDeserialize: deserialize_alis_a2a_extension_history_v1_A2AHistory,
+    requestType: alis_a2a_extension_history_v1_history_pb.DeleteThreadRequest,
+    responseType: google_protobuf_empty_pb.Empty,
+    requestSerialize: serialize_alis_a2a_extension_history_v1_DeleteThreadRequest,
+    requestDeserialize: deserialize_alis_a2a_extension_history_v1_DeleteThreadRequest,
+    responseSerialize: serialize_google_protobuf_Empty,
+    responseDeserialize: deserialize_google_protobuf_Empty,
   },
-  // Appends an event to a given A2AHistory
-appendEvent: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/AppendEvent',
+  // Appends an event to a given Thread
+appendThreadEvent: {
+    path: '/alis.a2a.extension.history.v1.ThreadService/AppendThreadEvent',
     requestStream: false,
     responseStream: false,
-    requestType: alis_a2a_extension_history_v1_history_pb.AppendEventRequest,
-    responseType: alis_a2a_extension_history_v1_history_pb.AppendEventResponse,
-    requestSerialize: serialize_alis_a2a_extension_history_v1_AppendEventRequest,
-    requestDeserialize: deserialize_alis_a2a_extension_history_v1_AppendEventRequest,
-    responseSerialize: serialize_alis_a2a_extension_history_v1_AppendEventResponse,
-    responseDeserialize: deserialize_alis_a2a_extension_history_v1_AppendEventResponse,
+    requestType: alis_a2a_extension_history_v1_history_pb.AppendThreadEventRequest,
+    responseType: alis_a2a_extension_history_v1_history_pb.AppendThreadEventResponse,
+    requestSerialize: serialize_alis_a2a_extension_history_v1_AppendThreadEventRequest,
+    requestDeserialize: deserialize_alis_a2a_extension_history_v1_AppendThreadEventRequest,
+    responseSerialize: serialize_alis_a2a_extension_history_v1_AppendThreadEventResponse,
+    responseDeserialize: deserialize_alis_a2a_extension_history_v1_AppendThreadEventResponse,
   },
   // Lists all events.
-listEvents: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/ListEvents',
+listThreadEvents: {
+    path: '/alis.a2a.extension.history.v1.ThreadService/ListThreadEvents',
     requestStream: false,
     responseStream: false,
-    requestType: alis_a2a_extension_history_v1_history_pb.ListEventsRequest,
-    responseType: alis_a2a_extension_history_v1_history_pb.ListEventsResponse,
-    requestSerialize: serialize_alis_a2a_extension_history_v1_ListEventsRequest,
-    requestDeserialize: deserialize_alis_a2a_extension_history_v1_ListEventsRequest,
-    responseSerialize: serialize_alis_a2a_extension_history_v1_ListEventsResponse,
-    responseDeserialize: deserialize_alis_a2a_extension_history_v1_ListEventsResponse,
+    requestType: alis_a2a_extension_history_v1_history_pb.ListThreadEventsRequest,
+    responseType: alis_a2a_extension_history_v1_history_pb.ListThreadEventsResponse,
+    requestSerialize: serialize_alis_a2a_extension_history_v1_ListThreadEventsRequest,
+    requestDeserialize: deserialize_alis_a2a_extension_history_v1_ListThreadEventsRequest,
+    responseSerialize: serialize_alis_a2a_extension_history_v1_ListThreadEventsResponse,
+    responseDeserialize: deserialize_alis_a2a_extension_history_v1_ListThreadEventsResponse,
   },
   // Stream events.
-streamEvents: {
-    path: '/alis.a2a.extension.history.v1.A2AHistoryService/StreamEvents',
+streamThreadEvents: {
+    path: '/alis.a2a.extension.history.v1.ThreadService/StreamThreadEvents',
     requestStream: false,
     responseStream: true,
-    requestType: alis_a2a_extension_history_v1_history_pb.StreamEventsRequest,
-    responseType: alis_a2a_extension_history_v1_history_pb.A2AHistoryEvent,
-    requestSerialize: serialize_alis_a2a_extension_history_v1_StreamEventsRequest,
-    requestDeserialize: deserialize_alis_a2a_extension_history_v1_StreamEventsRequest,
-    responseSerialize: serialize_alis_a2a_extension_history_v1_A2AHistoryEvent,
-    responseDeserialize: deserialize_alis_a2a_extension_history_v1_A2AHistoryEvent,
+    requestType: alis_a2a_extension_history_v1_history_pb.StreamThreadEventsRequest,
+    responseType: alis_a2a_extension_history_v1_history_pb.ThreadEvent,
+    requestSerialize: serialize_alis_a2a_extension_history_v1_StreamThreadEventsRequest,
+    requestDeserialize: deserialize_alis_a2a_extension_history_v1_StreamThreadEventsRequest,
+    responseSerialize: serialize_alis_a2a_extension_history_v1_ThreadEvent,
+    responseDeserialize: deserialize_alis_a2a_extension_history_v1_ThreadEvent,
   },
 };
 
-exports.A2AHistoryServiceClient = grpc.makeGenericClientConstructor(A2AHistoryServiceService, 'A2AHistoryService');
+exports.ThreadServiceClient = grpc.makeGenericClientConstructor(ThreadServiceService, 'ThreadService');

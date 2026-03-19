@@ -24,17 +24,17 @@ var google_protobuf_timestamp_pb = require('google-protobuf/google/protobuf/time
 
 var google_protobuf_field_mask_pb = require('google-protobuf/google/protobuf/field_mask_pb.js')
 
-var google_iam_v1_policy_pb = require('@alis-build/google-common-protos/google/iam/v1/policy_pb.js')
+var google_iam_v1_policy_pb = require('../../../../../google/iam/v1/policy_pb.js')
 
-var google_iam_v1_iam_policy_pb = require('@alis-build/google-common-protos/google/iam/v1/iam_policy_pb.js')
+var google_iam_v1_iam_policy_pb = require('../../../../../google/iam/v1/iam_policy_pb.js')
 
-var alis_open_iam_v1_iam_pb = require('@open.alis.services/protobuf/alis/open/iam/v1/iam_pb.js')
+var alis_open_iam_v1_iam_pb = require('../../../../../alis/open/iam/v1/iam_pb.js')
 
 var google_protobuf_empty_pb = require('google-protobuf/google/protobuf/empty_pb.js')
 
 var google_protobuf_struct_pb = require('google-protobuf/google/protobuf/struct_pb.js')
 
-var lf_a2a_v1_a2a_pb = require('@alis-build/a2a/lf/a2a/v1/a2a_pb.js')
+var lf_a2a_v1_a2a_pb = require('../../../../../lf/a2a/v1/a2a_pb.js')
 const proto = {};
 proto.alis = {};
 proto.alis.a2a = {};
@@ -822,3 +822,4 @@ proto.alis.a2a.extension.history.v1.A2AHistoryServicePromiseClient.prototype.str
 
 
 module.exports = proto.alis.a2a.extension.history.v1;
+

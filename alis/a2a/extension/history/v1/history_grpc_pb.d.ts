@@ -4,10 +4,10 @@
 // file: alis/a2a/extension/history/v1/history.proto
 
 import * as alis_a2a_extension_history_v1_history_pb from "../../../../../alis/a2a/extension/history/v1/history_pb";
-import * as google_iam_v1_policy_pb from "@alis-build/google-common-protos/google/iam/v1/policy_pb";
-import * as google_iam_v1_iam_policy_pb from "@alis-build/google-common-protos/google/iam/v1/iam_policy_pb";
-import * as alis_open_iam_v1_iam_pb from "@open.alis.services/protobuf/alis/open/iam/v1/iam_pb";
-import * as grpc from "@grpc/grpc-js";
+import * as google_iam_v1_policy_pb from "../../../../../google/iam/v1/policy_pb";
+import * as google_iam_v1_iam_policy_pb from "../../../../../google/iam/v1/iam_policy_pb";
+import * as alis_open_iam_v1_iam_pb from "../../../../../alis/open/iam/v1/iam_pb";
+import * as grpc from "grpc";
 
 interface IA2AHistoryServiceService extends grpc.ServiceDefinition<grpc.UntypedServiceImplementation> {
   getIamPolicy: grpc.MethodDefinition<google_iam_v1_iam_policy_pb.GetIamPolicyRequest, google_iam_v1_policy_pb.Policy>;

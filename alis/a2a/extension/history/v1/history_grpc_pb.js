@@ -5,12 +5,12 @@ var grpc = require('@grpc/grpc-js');
 var alis_a2a_extension_history_v1_history_pb = require('../../../../../alis/a2a/extension/history/v1/history_pb.js');
 var google_protobuf_timestamp_pb = require('google-protobuf/google/protobuf/timestamp_pb.js');
 var google_protobuf_field_mask_pb = require('google-protobuf/google/protobuf/field_mask_pb.js');
-var google_iam_v1_policy_pb = require('@alis-build/google-common-protos/google/iam/v1/policy_pb.js');
-var google_iam_v1_iam_policy_pb = require('@alis-build/google-common-protos/google/iam/v1/iam_policy_pb.js');
-var alis_open_iam_v1_iam_pb = require('@open.alis.services/protobuf/alis/open/iam/v1/iam_pb.js');
+var google_iam_v1_policy_pb = require('../../../../../google/iam/v1/policy_pb.js');
+var google_iam_v1_iam_policy_pb = require('../../../../../google/iam/v1/iam_policy_pb.js');
+var alis_open_iam_v1_iam_pb = require('../../../../../alis/open/iam/v1/iam_pb.js');
 var google_protobuf_empty_pb = require('google-protobuf/google/protobuf/empty_pb.js');
 var google_protobuf_struct_pb = require('google-protobuf/google/protobuf/struct_pb.js');
-var lf_a2a_v1_a2a_pb = require('@alis-build/a2a/lf/a2a/v1/a2a_pb.js');
+var lf_a2a_v1_a2a_pb = require('../../../../../lf/a2a/v1/a2a_pb.js');
 
 function serialize_alis_a2a_extension_history_v1_A2AHistory(arg) {
   if (!(arg instanceof alis_a2a_extension_history_v1_history_pb.A2AHistory)) {

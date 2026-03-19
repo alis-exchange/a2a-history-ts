@@ -1,9 +1,9 @@
 import * as grpcWeb from 'grpc-web';
 
 import * as alis_a2a_extension_history_v1_history_pb from '../../../../../alis/a2a/extension/history/v1/history_pb'; // proto import: "alis/a2a/extension/history/v1/history.proto"
-import * as alis_open_iam_v1_iam_pb from '../../../../../alis/open/iam/v1/iam_pb'; // proto import: "alis/open/iam/v1/iam.proto"
-import * as google_iam_v1_iam_policy_pb from '../../../../../google/iam/v1/iam_policy_pb'; // proto import: "google/iam/v1/iam_policy.proto"
-import * as google_iam_v1_policy_pb from '../../../../../google/iam/v1/policy_pb'; // proto import: "google/iam/v1/policy.proto"
+import * as alis_open_iam_v1_iam_pb from '@open.alis.services/protobuf/alis/open/iam/v1/iam_pb'; // proto import: "alis/open/iam/v1/iam.proto"
+import * as google_iam_v1_iam_policy_pb from '@alis-build/google-common-protos/google/iam/v1/iam_policy_pb'; // proto import: "google/iam/v1/iam_policy.proto"
+import * as google_iam_v1_policy_pb from '@alis-build/google-common-protos/google/iam/v1/policy_pb'; // proto import: "google/iam/v1/policy.proto"
 import * as google_protobuf_empty_pb from 'google-protobuf/google/protobuf/empty_pb'; // proto import: "google/protobuf/empty.proto"
 
 
@@ -162,4 +162,3 @@ export class ThreadServicePromiseClient {
   ): grpcWeb.ClientReadableStream<alis_a2a_extension_history_v1_history_pb.ThreadEvent>;
 
 }
-

@@ -2,11 +2,11 @@ import * as jspb from 'google-protobuf'
 
 import * as google_protobuf_timestamp_pb from 'google-protobuf/google/protobuf/timestamp_pb'; // proto import: "google/protobuf/timestamp.proto"
 import * as google_protobuf_field_mask_pb from 'google-protobuf/google/protobuf/field_mask_pb'; // proto import: "google/protobuf/field_mask.proto"
-import * as google_iam_v1_policy_pb from '../../../../../google/iam/v1/policy_pb'; // proto import: "google/iam/v1/policy.proto"
-import * as google_iam_v1_iam_policy_pb from '../../../../../google/iam/v1/iam_policy_pb'; // proto import: "google/iam/v1/iam_policy.proto"
-import * as alis_open_iam_v1_iam_pb from '../../../../../alis/open/iam/v1/iam_pb'; // proto import: "alis/open/iam/v1/iam.proto"
+import * as google_iam_v1_policy_pb from '@alis-build/google-common-protos/google/iam/v1/policy_pb'; // proto import: "google/iam/v1/policy.proto"
+import * as google_iam_v1_iam_policy_pb from '@alis-build/google-common-protos/google/iam/v1/iam_policy_pb'; // proto import: "google/iam/v1/iam_policy.proto"
+import * as alis_open_iam_v1_iam_pb from '@open.alis.services/protobuf/alis/open/iam/v1/iam_pb'; // proto import: "alis/open/iam/v1/iam.proto"
 import * as google_protobuf_empty_pb from 'google-protobuf/google/protobuf/empty_pb'; // proto import: "google/protobuf/empty.proto"
-import * as lf_a2a_v1_a2a_pb from '../../../../../lf/a2a/v1/a2a_pb'; // proto import: "lf/a2a/v1/a2a.proto"
+import * as lf_a2a_v1_a2a_pb from '@alis-build/a2a/lf/a2a/v1/a2a_pb'; // proto import: "lf/a2a/v1/a2a.proto"
 
 
 export class Thread extends jspb.Message {
@@ -342,4 +342,3 @@ export namespace AppendThreadEventResponse {
   export type AsObject = {
   }
 }
-

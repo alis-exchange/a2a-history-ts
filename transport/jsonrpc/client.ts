@@ -8,12 +8,12 @@
  * Errors: JsonRpcTransportError (network/HTTP) or JsonRpcProtocolError (server error object).
  */
 import type {
-  A2AHistory,
-  GetA2AHistoryRequest,
-  ListA2AHistoriesRequest,
-  ListA2AHistoriesResponse,
-  ListEventsRequest,
-  ListEventsResponse,
+  GetThreadRequest,
+  ListThreadEventsRequest,
+  ListThreadEventsResponse,
+  ListThreadsRequest,
+  ListThreadsResponse,
+  Thread,
 } from "../../alis/a2a/extension/history/v1/history_pb";
 import type {
   A2AHistoryClientConfig,
@@ -24,9 +24,9 @@ import type {
 
 /** JSON-RPC method identifiers. Must match server-side method names. */
 const Methods = {
-  historyGet: "history/get",
-  historiesList: "history/list",
-  eventsList: "history/events/list",
+  getThread: "GetThread",
+  listThreads: "ListThreads",
+  listThreadEvents: "ListThreadEvents",
 } as const;
 
 /** JSON-RPC version string per spec. */
@@ -80,47 +80,45 @@ export class A2AHistoryClient {
   }
 
   /**
-   * Retrieves a single A2AHistory by resource name.
+   * Retrieves a single Thread by resource name.
    *
-   * @param params - Request containing the resource name (e.g. `name: "histories/123"`)
-   * @returns The A2AHistory as a plain object
-   * JSON-RPC: `history/get`
+   * @param params - Request containing the resource name (e.g. `name: "threads/123"`)
+   * @returns The Thread as a plain object
+   * JSON-RPC: `GetThread`
    */
-  async getHistory(
-    params: GetA2AHistoryRequest.AsObject,
-  ): Promise<A2AHistory.AsObject> {
-    return this.request<A2AHistory.AsObject>(Methods.historyGet, params);
+  async getThread(params: GetThreadRequest.AsObject): Promise<Thread.AsObject> {
+    return this.request<Thread.AsObject>(Methods.getThread, params);
   }
 
   /**
-   * Lists A2AHistory resources, with optional filtering and pagination.
+   * Lists Thread resources, with optional filtering and pagination.
    *
    * @param params - Optional parent, filter, pageSize, pageToken
    * @returns Paginated list and next token
-   * JSON-RPC: `history/list`
+   * JSON-RPC: `ListThreads`
    */
-  async listHistories(
-    params: Partial<ListA2AHistoriesRequest.AsObject> = {},
-  ): Promise<ListA2AHistoriesResponse.AsObject> {
-    return this.request<ListA2AHistoriesResponse.AsObject>(
-      Methods.historiesList,
+  async listThreads(
+    params: Partial<ListThreadsRequest.AsObject> = {},
+  ): Promise<ListThreadsResponse.AsObject> {
+    return this.request<ListThreadsResponse.AsObject>(
+      Methods.listThreads,
       params,
     );
   }
 
   /**
-   * Lists events within a given A2AHistory, with optional pagination.
+   * Lists events within a given Thread, with optional pagination.
    *
-   * @param params - Must include `parent` (history resource name); optional pageSize, pageToken
+   * @param params - Must include `parent` (thread resource name); optional pageSize, pageToken
    * @returns Paginated events and next token
-   * JSON-RPC: `history/events/list`
+   * JSON-RPC: `ListThreadEvents`
    */
-  async listEvents(
-    params: Partial<ListEventsRequest.AsObject> &
-      Pick<ListEventsRequest.AsObject, "parent">,
-  ): Promise<ListEventsResponse.AsObject> {
-    return this.request<ListEventsResponse.AsObject>(
-      Methods.eventsList,
+  async listThreadEvents(
+    params: Partial<ListThreadEventsRequest.AsObject> &
+      Pick<ListThreadEventsRequest.AsObject, "parent">,
+  ): Promise<ListThreadEventsResponse.AsObject> {
+    return this.request<ListThreadEventsResponse.AsObject>(
+      Methods.listThreadEvents,
       params,
     );
   }
@@ -182,7 +180,9 @@ export class A2AHistoryClient {
       data = await response.json();
     } catch {
       // Malformed or non-JSON response body
-      throw new JsonRpcTransportError(`Invalid JSON in response from ${method}`);
+      throw new JsonRpcTransportError(
+        `Invalid JSON in response from ${method}`,
+      );
     }
 
     if (data.error) {
